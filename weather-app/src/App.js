@@ -1,4 +1,5 @@
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
   return (
@@ -13,7 +14,17 @@ crossorigin="anonymous" />
         <div className="outerbox">
           <div className="container">
             <div className="searchbar">
-              <textbox></textbox>
+            <div className="input-group">
+                <input className="form-control border-end-0 border rounded-pill" type="search" value="search" id="example-search-input" />
+                <span className="input-group-append">
+                    <button className="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5" type="button">
+                        <i className="fa fa-search"></i>
+                        <FontAwesomeIcon icon={["far", "search"]} />
+                        <FontAwesomeIcon icon={['fab', 'google']} />
+
+                    </button>
+                </span>
+            </div>
             </div>
             <div className="inner-container">
               <div className="left"></div>
